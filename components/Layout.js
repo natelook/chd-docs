@@ -12,11 +12,15 @@ export default function Layout({ children }) {
           crossorigin='anonymous'
         />
       </Head>
-      <nav className='nav justify-content-start container'>
-        <div class='nav-item'>
-          <Link href='/docs'>
-            <a class='nav-link active'>Docs</a>
-          </Link>
+      <nav className='nav navbar navbar-dark bg-dark justify-content-start'>
+        <div className='container'>
+          <div class='nav-item'>
+            <Link href='/docs'>
+              <a class='nav-link active' style={{ color: '#fff' }}>
+                Docs
+              </a>
+            </Link>
+          </div>
         </div>
       </nav>
       {children}
